@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listado de productos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/productos.css" rel="stylesheet" type="text/css" />
+
+    <script src="../assets/js/mijs.js"></script>
+  </head>
+
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div><img src="/assets/img/logoCUC.png" alt="logo Universidad" /> Buenas prácticas</div>
+      <div style="margin-left: auto">Salir</div>
+    </header>
+
+    <!-- Menú izquierda -->
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 160px">
+      <a href="../index.html" class="w3-bar-item w3-button">
+        <i class="fa-solid fa-house rojoCUC"></i>
+        Inicio
+      </a>
+      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+        Productos <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demoAcc" class="w3-hide w3-white w3-card">
+        <a href="#" class="w3-bar-item w3-button">Listar</a>
+        <a href="#" class="w3-bar-item w3-button">Administrar</a>
+      </div>
+
+      <div class="w3-dropdown-click">
+        <button class="w3-button" onclick="myDropFunc()">Almacenes <i class="fa fa-caret-down"></i></button>
+        <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+          <a href="#" class="w3-bar-item w3-button">Agregar</a>
+          <a href="#" class="w3-bar-item w3-button">Ubicaciones</a>
+        </div>
+      </div>
+      <a href="#" class="w3-bar-item w3-button">Acerca de</a>
+      <a href="#" class="w3-bar-item w3-button"> <i class="fa-solid fa-right-from-bracket"></i> Salir </a>
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="w3-container" style="margin-left: 160px">
+      <div>
+        <ul class="breadcrumb">
+          <li><a href="#">Productos</a></li>
+          <li>Listar</li>
+        </ul>
+      </div>
+
+      <h2>Listado de productos</h2>
+
+      <div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="../assets/img/01_pizza.png" alt="mi pizza" />
+              <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="../assets/img/02_hamburguesa.png" alt="mi pizza" />
+              <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="../assets/img/03_lasagna.png" alt="mi pizza" />
+              <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segunda fila-->
+        <div class="row" style="padding-top: 1rem">
+          <div class="column">
+            <div class="card">
+              <img src="../assets/img/04_ensalada.png" alt="mi pizza" />
+              <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="../assets/img/05_caldo.png" alt="mi pizza" />
+              <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="../assets/img/06_helado.png" alt="mi pizza" />
+              <div class="container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p><br></p>
+      </div>
+    </div>
+  </body>
+</html>

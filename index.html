@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alimentos S.A.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="assets/css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/all.css" rel="stylesheet" type="text/css" />
+
+    <script src="assets/js/mijs.js"></script>
+  </head>
+
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div><img src="assets/img/logoCUC.png" alt="logo Universidad" />Parcial 01</div>
+      <div style="margin-left: auto">Salir</div>
+    </header>
+
+    <!-- Menú izquierda -->
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 160px">
+      <a href="#" class="w3-bar-item w3-button">
+        <i class="fa-solid fa-house rojoCUC"></i>
+        Inicio
+      </a>
+      <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+        Productos <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demoAcc" class="w3-hide w3-white w3-card">
+        <a href="pages/producto_listar.html" class="w3-bar-item w3-button">Listar</a>
+        <a href="#" class="w3-bar-item w3-button">Administrar</a>
+      </div>
+
+      <div class="w3-dropdown-click">
+        <button class="w3-button" onclick="myDropFunc()">Almacenes <i class="fa fa-caret-down"></i></button>
+        <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+          <a href="#" class="w3-bar-item w3-button">Agregar</a>
+          <a href="#" class="w3-bar-item w3-button">Ubicaciones</a>
+        </div>
+      </div>
+      <a href="#" class="w3-bar-item w3-button">Acerca de</a>
+      <a href="#" class="w3-bar-item w3-button"> <i class="fa-solid fa-right-from-bracket"></i> Salir </a>
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="w3-container" style="margin-left: 160px">
+      <div>
+        <ul class="breadcrumb">
+          <li><a href="#">Inicio</a></li>
+          <li>Bienvenido</li>
+        </ul>
+      </div>
+
+      <h2>Página de inicio</h2>
+      <h3>
+      <p style="text-align: justify">
+        En Alimentos S.A. nos dedicamos a ofrecer productos alimenticios de la más alta calidad, comprometidos con la
+        salud y el bienestar de nuestros clientes. Con más de 20 años de experiencia en la industria, nos especializamos
+        en la producción y distribución de alimentos frescos y procesados, garantizando siempre la frescura y el sabor
+        que nos caracteriza. Nuestra misión es proporcionar alimentos nutritivos y deliciosos que enriquezcan la vida de
+        las personas.
+      </p>
+
+      <p style="text-align: justify">
+        Trabajamos con proveedores locales y utilizamos ingredientes naturales para asegurar que cada producto cumpla
+        con nuestros estrictos estándares de calidad. Únete a nosotros en nuestro viaje hacia una alimentación más
+        saludable y sostenible. Descubre más sobre nuestros productos y compromisos en Alimentos S.A.
+      </p>
+    </h3>
+    </div>
+  </body>
+</html>
